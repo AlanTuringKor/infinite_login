@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="login-container">
+    <h1>Inception Login: The Endless Authentication Adventure</h1>
+    <div id="level-info">
+        <div class="level-badge">Level <span id="current-level">1</span></div>
+        <p class="theme-item"><i class="fas fa-history"></i> Meme Era: <span id="meme-era"></span></p>
+        <p class="theme-item"><i class="fas fa-user-circle"></i> Login as: <span id="persona"></span></p>
+        <p class="theme-item"><i class="fas fa-robot"></i> Prove you're a: <span id="captcha"></span></p>
+        <p class="theme-item"><i class="fas fa-calendar-alt"></i> Current Year: <span id="year"></span></p>
+        <p class="theme-item"><i class="fas fa-language"></i> Language: <span id="language"></span></p>
+    </div>
+    <form id="login-form">
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" placeholder="Username" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <div id="task-container">
+            <p class="task-label"><i class="fas fa-tasks"></i> Task:</p>
+            <p id="task"></p>
+            <textarea id="task-response" placeholder="Your response" required></textarea>
+        </div>
+        <button type="submit">Login <i class="fas fa-sign-in-alt"></i></button>
+    </form>
+    <div id="message"></div>
+    <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        <p>Authenticating...</p>
+    </div>
+</div>
+{% endblock %}

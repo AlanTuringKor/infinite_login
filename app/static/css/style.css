@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+#level-info {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.level-badge {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.theme-item {
+    margin: 0.5em 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+}
+
+input, textarea, button {
+    padding: 0.8em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    padding-left: 2.5em;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 1em;
+    font-weight: bold;
+    min-height: 1.5em;
+}
+
+.task-label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+#loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none;
+}
+
+/* Theme-specific styles */
+.theme-geocities { background: url('https://example.com/geocities-bg.jpg'); }
+.theme-myspace { background: url('https://example.com/myspace-bg.jpg'); }
+.theme-doge { background: url('https://example.com/doge-bg.jpg'); }
+.theme-distracted-boyfriend { background: url('https://example.com/distracted-boyfriend-bg.jpg'); }
+.theme-modern { background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); }
+
+
+/* Add these theme-specific styles at the end of your existing CSS file */
+
+.theme-retro-gaming {
+    background: url('https://example.com/retro-gaming-bg.jpg');
+    font-family: 'Press Start 2P', cursive;
+    color: #33ff00;
+}
+
+.theme-social-media {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    font-family: 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.theme-time-paradox {
+    background: url('https://example.com/time-paradox-bg.jpg');
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffff;
+}
+
+.theme-culinary-web {
+    background: url('https://example.com/culinary-web-bg.jpg');
+    font-family: 'Lobster', cursive;
+    color: #ff6347;
+}
+
+.theme-mythical-internet {
+    background: url('https://example.com/mythical-internet-bg.jpg');
+    font-family: 'MedievalSharp', cursive;
+    color: #ffd700;
+}
